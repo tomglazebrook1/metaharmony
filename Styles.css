@@ -73,7 +73,7 @@ nav a {
 
 
 .super-large {
-    font-size: 6rem; /* Very large text */
+    font-size: 6.1rem; /* Very large text */
     font-weight: bold;
   }
 
@@ -81,3 +81,5 @@ nav a {
     font-size: 3.5rem; /* large text */
     font-weight: bold;
   }
+
+  
