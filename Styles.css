@@ -1,0 +1,83 @@
+
+
+/* Navigation styling */
+nav {
+    background-color: #ededed;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+nav a {
+    margin-right: 1em;
+    text-decoration: none;
+    color: #141414;
+}
+
+.nav-style {
+    /* styles for links with this class */
+    color: rgb(29, 29, 29);
+    background-color: #ededed;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* image sizes */
+.standard-image {
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+}
+
+.large-image {
+    height: 500px;
+    width: auto;
+    object-fit: contain;
+}
+.small-image {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+.space-small {
+    margin-bottom: 25px;
+}
+
+.space-medium {
+    margin-bottom: 50px;
+}
+
+.space-large {
+    margin-bottom: 100px;
+}
+
+
+.audio-player-container {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.audio-title {
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+}
+
+.audio-player-container audio {
+    margin-top: 5px;
+}
+
+
+.super-large {
+    font-size: 6rem; /* Very large text */
+    font-weight: bold;
+  }
+
+  .large {
+    font-size: 3.5rem; /* large text */
+    font-weight: bold;
+  }
