@@ -1,24 +1,67 @@
-
-
-/* Navigation styling */
 nav {
-    background-color: #ededed;
+    background-color: transparent;
     padding: 1em;
     margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav a {
     margin-right: 1em;
+    margin-bottom: 0.5em;
     text-decoration: none;
     color: #141414;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #e4e4e4;
+    border-radius: 1px; /* Changed from 6px to 1px for more square buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    font-family: Helvetica, Arial, sans-serif; /* Added Helvetica as primary font */
+    font-style: italic;
+    letter-spacing: 0.02em; /* Optional: slight letter spacing for better readability */
+}
+
+nav a:hover {
+    background-color: #bfbfbf;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
 }
 
 .nav-style {
-    /* styles for links with this class */
     color: rgb(29, 29, 29);
-    background-color: #ededed;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: #e2e2e2;
+    border-radius: 1px; /* Matching the nav a border-radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Helvetica, Arial, sans-serif; /* Added Helvetica as primary font */
+    font-style: italic;
+    letter-spacing: 0.02em; /* Matching the nav a letter spacing */
+}
+
+.nav-style:hover {
+    background-color: #bbbbbb;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+    
+    nav a {
+        font-size: 1.4rem;
+        padding: 12px 18px;
+        margin-right: 0.5em;
+    }
 }
 
 /* image sizes */
@@ -34,7 +77,7 @@ nav a {
     object-fit: contain;
 }
 .small-image {
-    height: 150px;
+    height: 110px;
     width: auto;
     object-fit: contain;
 }
@@ -57,7 +100,8 @@ nav a {
     background: #f0f0f0;
     padding: 10px;
     border-radius: 15px;
-    width: fit-content;
+    width: 400px; /* Set a fixed minimum width */
+    max-width: 100%; /* Ensures it doesn't overflow on mobile */
 }
 
 .audio-title {
@@ -65,10 +109,27 @@ nav a {
     font-weight: bold;
     font-style: italic;
     color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." if title is too long */
 }
 
 .audio-player-container audio {
     margin-top: 5px;
+    width: 100%; /* Makes audio player fill container */
+}
+
+/* Add responsive styles for mobile */
+@media screen and (max-width: 768px) {
+    .audio-player-container {
+        width: 90%; /* Almost full width on mobile */
+        box-sizing: border-box; /* Include padding in width calculation */
+        margin-bottom: 20px; /* Extra space below container */
+    }
+    
+    .audio-player-container audio {
+        height: auto; /* Let height adjust automatically */
+    }
 }
 
 
