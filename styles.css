@@ -1,7 +1,7 @@
 nav {
     background-color: transparent;
     padding: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -19,18 +19,13 @@ nav a {
     font-weight: 500;
     background-color: #e4e4e4;
     border-radius: 1px; /* Changed from 6px to 1px for more square buttons */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease;
     font-family: Helvetica, Arial, sans-serif; /* Added Helvetica as primary font */
     font-style: italic;
     letter-spacing: 0.02em; /* Optional: slight letter spacing for better readability */
 }
 
-nav a:hover {
-    background-color: #bfbfbf;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
-}
+
 
 .nav-style {
     color: rgb(29, 29, 29);
@@ -39,17 +34,10 @@ nav a:hover {
     font-size: 1.2rem;
     background-color: #e2e2e2;
     border-radius: 1px; /* Matching the nav a border-radius */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: Helvetica, Arial, sans-serif; /* Added Helvetica as primary font */
-    font-style: italic;
-    letter-spacing: 0.02em; /* Matching the nav a letter spacing */
+    font-family: 'Times New Roman', Times, serif
 }
 
-.nav-style:hover {
-    background-color: #bbbbbb;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
-}
+
 
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
@@ -63,6 +51,14 @@ nav a:hover {
         margin-right: 0.5em;
     }
 }
+
+.divider {
+    height: 1px;
+    background-color: rgb(199, 199, 199);
+    width: 100%;
+    margin-top: 25px; /* Adjust this to move the line down */
+    margin-bottom: 1px; /* Adjust this to control space below the line */
+  }
 
 /* image sizes */
 .standard-image {
