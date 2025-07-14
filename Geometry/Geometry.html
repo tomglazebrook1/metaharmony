@@ -1,44 +1,113 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="../styles.css">
-        <title>Geometry</title>
-        <link rel="icon" href="../images/favicon32.png" type="image/x-icon">
-    </head>
-    <body>
-        <nav>
-            
-            <img src="../images/logo.png" class="small-image" alt="Colour Wheel">
-            <a href="../index.html">Home</a> 
-            <a href="../colours/colours.html">Colours</a> 
-            <a href="Geometry.html">Geometry</a> 
-            <a href="../cookbook/InAction.html">Cook Book</a> 
-            <a href="../mystory.html">My Story</a> 
-            <a href="../contact.html">Contact</a> 
-            <div class="divider"></div>
-        </nav>
-        <div class="large"><i>GEOMETRY</i></div>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Geometry</title>
+    <link rel="icon" href="../images/favicon32.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>Image Viewer</title>
+  <style>
+    #viewer {
+      width: 300px;
+      height: 300px;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    #viewer2 {
+      width: 800px;
+      height: 300px;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <img src="../images/logo.png" class="small-image" alt="Colour Wheel">
+          <a href="../index.html">Home</a> 
+          <a href="../colours/colours.html">Colours</a> 
+          <a href="../Geometry/Geometry.html">Geometry</a> 
+          <a href="../cookbook/InAction.html">Cook Book</a> 
+          <a href="../mystory.html">My Story</a> 
+          <a href="../contact.html">Contact</a>
+          <div class="divider"></div>
+      </nav>
+      <div class="large"><i>GEOMETRY</i></div>
         <div class="space-medium"></div>
         <p>The colours of metaharmony take physical shape</p>
-        <p>All possible harmonic movements and key changes become geometric rotations</p>
+        <p>All possible harmonic movements and key changes become geometric movements</p>
         <p>Like with the colours we'll have a page on each step</p>
-        <p>But firstly here's a full summary of the process:</p>
+        <h2>But first,</h2>
+        <p>Here's the orange hypercube,</p>
+        <p>as we can see below it maps to the chart we made in the harmonic functions pages (Colours)</p>
+        <p>use the buttons or arrow keys to navigate it</p>
+        <p><i>- Focus on the minor 3rd cycles (left and right)</i></p>
+        <p><i>- and the 1 4 5 relationships (up and down)</i></p>
+
+  <div id="viewer">
+    <img id="mainImage" src="" alt="Image Viewer">
+  </div>
+
+  <div id="viewer2">
+    <img id="secondImage" src="" alt="Image Viewer">
+  </div>
+
+  <script src="../viewer.js"></script>
+    <div class="navigation-controls">
+      <button id="upBtn">↑</button>
+      <div class="horizontal-controls">
+        <button id="leftBtn">←</button>
+        <button id="rightBtn">→</button>
+      </div>
+      <button id="downBtn">↓</button>
+    </div>
+
+    <style>
+      .navigation-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+      .horizontal-controls {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+      }
+      
+      button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
         <div class="space-large"></div>
-        <p>ALL COMING SOON</p>
-        <div class="space-large"></div>
-        <h2>Step 1: Primary colours = Squares</h2>
-        <h2>Step 2: Secondary colours = Cubes</h2>
-        <h2>Step 3: Hypercubes = All functions</h2>
-        <h2>Step 4: Hypercubes join in the metaprism</h2>
-        <h2>Step 5: Arcades link the hypercubes</h2>
-        <h2>Step 6: The Atira</h2>
-        <div class="space-large"></div>
+        <h2><i>Here are the pages to build the 3 hypercubes and then connect them in the metaprism:</i></h2>
+        <div class="space-medium"></div>
         <a href="squares.html"class="nav-style">1. Squares</a><br><br><br>
         <a href="Alphacubes.html"class="nav-style">2. Alpha Cubes</a><br><br><br>
         <a href="Hypercubes.html"class="nav-style">3. Hypercubes</a><br><br><br>
         <a href="metaprism.html"class="nav-style">4. Metaprism</a><br><br><br>
         <a href="arcades.html"class="nav-style">5. arcades</a><br><br><br>
         <a href="atrium.html"class="nav-style">6. Atria</a><br><br><br>
+        <a href="recap.html"class="nav-style">SUMMARY</a><br><br><br>
+        <div class="space-large"></div>
+        <h2>Advanced geometry pages coming soon</h2>
         <div class="space-large"></div>
         <div class="divider"></div>
         <div class="space-small"></div>
